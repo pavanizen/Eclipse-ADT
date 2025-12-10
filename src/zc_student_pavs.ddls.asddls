@@ -20,8 +20,9 @@ define root view entity ZC_STUDENT_PAVS
       Courseduration,
       @EndUserText.label: 'Status'
       Status,
-      @EndUserText.label: 'Gender'
+    @EndUserText.label: 'Gender'
       Gender,
+     Genderdesc,
       @EndUserText.label: 'DOB'
       Dob
 }

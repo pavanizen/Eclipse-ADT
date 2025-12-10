@@ -1,0 +1,12 @@
+projection;
+//strict ( 2 );
+
+define behavior for ZC_STUDENT_PAVS alias Student
+{
+  use create;
+  use update;
+  use delete;
+
+
+ use action setAdmitted;
+}

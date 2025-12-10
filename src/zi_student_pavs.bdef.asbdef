@@ -1,0 +1,27 @@
+managed implementation in class zbp_i_student_pavs unique;
+strict ( 2 );
+
+define behavior for ZI_Student_Pavs alias Student
+persistent table zcim_rap_table
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( numbering : managed, readonly ) Id;
+  action( features : instance) setAdmitted result[1] $self;
+  mapping for zcim_rap_table
+    {
+      Id             = id;
+      Firstname      = firstname;
+      Lastname       = lastname;
+      Age            = age;
+      Course         = course;
+      Courseduration = courseduration;
+      Status         = status;
+      Gender         = gender;
+      Dob            = dob;
+    }
+}

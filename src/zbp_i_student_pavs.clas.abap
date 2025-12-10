@@ -1,0 +1,5 @@
+CLASS zbp_i_student_pavs DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_student_pavs.
+ENDCLASS.
+
+CLASS zbp_i_student_pavs IMPLEMENTATION.
+ENDCLASS.
