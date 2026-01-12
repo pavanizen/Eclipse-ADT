@@ -57,14 +57,14 @@ annotate view ZC_STUDENT_PAVS with
   @UI: { lineItem: [{ position: 80, label: 'Gender' }  ],
   identification: [{position: 80, label: 'Gender'  }] }
 
-@Consumption.valueHelpDefinition: [{ entity: { name: 'ZI_Gender_RAP', element: 'Value' },
-  distinctValues: true,
-  additionalBinding: [{  localElement: 'Genderdesc',
-                          element: 'Description',
-                          usage: #FILTER_AND_RESULT}] }]
+  @Consumption.valueHelpDefinition: [{ entity: { name: 'ZI_GENDER_RAP', element: 'Value' },
+    distinctValues: true,
+    additionalBinding: [{  localElement: 'Genderdesc',
+                            element: 'Description',
+                            usage: #FILTER_AND_RESULT}] }]
   Gender;
-  
-  @UI: { identification: [{position: 85, label: ''  }] } 
+
+  @UI: { identification: [{position: 85, label: ''  }] }
   Genderdesc;
 
   @UI: { lineItem: [{ position: 90, label: 'DOB' }  ],
